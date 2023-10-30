@@ -1,6 +1,6 @@
 {
-    "name": "noticias",
-    "short_name": "newspwa",
+    "name": "camPwa",
+    "short_name": "camPwa",
     "icons": [
       {
         "src": "public/pika.png",
