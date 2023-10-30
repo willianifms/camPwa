@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PWA Camera</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="manifest" href="manifest.json" />
-    <link rel="apple-touch-icon" href="/public/pika.png"/>
-    <link rel="icon" href="public/pika.png" sizes="256x256"/>
-    <meta name="theme-color" content="white" />
-</head>
-<body>
-    <main id="camera">
-        <canvas id="camera--sensor"></canvas>
-        <video id="camera--view" autoplay playsinline></video>
-        <img src="//:0" alt="" id="camera--output">
-        <button id="camera--trigger">tirar foto</button>
-     
-    </main>
 
-    <div>
-       <img src="//:0" alt="" class="last-photos" id="last-1">
-        <img src="//:0" alt="" class="last-photos" id="last-2">
-        <img src="//:0" alt="" class="last-photos" id="last-3">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Câmera PWA</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="images/pwa-iicon-256.png"/>
+  <link rel="icon" href="/imagens/256.jpg" sizes="256x256"/>
+  <meta name="theme-color" content="white"/>
+</head>
+
+<body>
+  <main id="camera">
+    <div id="tirafoto">
+      <video id="camera--view" autoplay playinline></video>
+      <button id="camera--trigger">tirar foto</button>
     </div>
-    <script src="js/main.js" type="module"></script>
+    
+    <div id="fotos-container">
+      <canvas id="camera--sensor"></canvas>
+      <div src="//:0" alt="" id="camera--output"></div>
+    </div>
+  </main>
+  <script src="/js/main.js" type="module"></script>
 </body>
+
 </html>
