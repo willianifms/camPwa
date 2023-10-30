@@ -34,7 +34,8 @@ console.error("Ocorreu um Erro.", error);
 cameraSensor.width = cameraView.videoWidth;
 cameraTrigger.onclick= function () {
 cameraSensor.height = cameraView.videoHeight;
-cameraSensor.getContext("2d").drawImage(cameraView, 0, 0); cameraoutput.src = cameraSensor.toDataURL("image/webp");
+cameraSensor.getContext("2d").drawImage(cameraView, 0, 0); 
+cameraOutput.src = cameraSensor.toDataURL("image/webp");
 cameraOutput.classList.add("taken");
 };
 // carrega imagem de camera quando a janela carregar window.addEventListener("load", cameraStart, false);
