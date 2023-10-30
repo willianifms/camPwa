@@ -14,7 +14,7 @@ html, body, #camera {
     filter: FlipH;
   }
   #camera--trigger{
-    width: 200px;
+    width: 100%;
     background-color: black;
     color: white;
     font-size: 16px;
